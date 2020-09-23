@@ -25,11 +25,22 @@ namespace AccessControlProject
         public void StartForm()
         {
             Application.Run(new frmSplash());
+            /*SplashScreen.SplashForm frm = new SplashScreen.SplashForm();
+            frm.AppName = "User Control";
+            Application.Run(frm);*/
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            Close();
+        }
+
+        ////////////
     }
 }
